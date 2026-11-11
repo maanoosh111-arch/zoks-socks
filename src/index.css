@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Foda Kufi Regular";
+  src: local("Foda Kufi Regular"), local("Foda Kufi"), local("Reem Kufi"), local("Noto Kufi Arabic");
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Expo Arabic";
+  src: local("Expo Arabic"), local("ExpoArabic"), local("Readex Pro"), local("Cairo");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-foda-kufi: "Foda Kufi Regular", "Reem Kufi", "Noto Kufi Arabic", sans-serif;
+  --font-expo-arabic: "Expo Arabic", "Readex Pro", "Cairo", sans-serif;
+}
+
+html,
+body {
+  font-family: var(--font-expo-arabic);
+  direction: rtl;
+  text-align: right;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.font-foda-kufi {
+  font-family: var(--font-foda-kufi);
+}
+
+.font-expo-arabic {
+  font-family: var(--font-expo-arabic);
+}
+
+/* Luxurious Slower Right-to-Left (RTL) reveal animation for the Hero arched text */
+@keyframes heroRtlReveal {
+  0% {
+    clip-path: inset(0 0 0 100%);
+    opacity: 0.15;
+    transform: translateY(12px) scale(0.98);
+    filter: blur(1.5px);
+  }
+  40% {
+    opacity: 0.85;
+    filter: blur(0px);
+  }
+  75% {
+    clip-path: inset(0 0 0 0%);
+    opacity: 1;
+    transform: translateY(-1.5px) scale(1.003);
+  }
+  100% {
+    clip-path: inset(0 0 0 0%);
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes socksRiseIn {
+  0% {
+    opacity: 0;
+    transform: translateY(22px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Slower, graceful reveal duration (2.8s) for a premium, aesthetic look */
+.animate-hero-rtl {
+  animation: heroRtlReveal 2.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-socks-rise {
+  animation: socksRiseIn 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Hide scrollbars on horizontal category chips while keeping smooth touch scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Print-only Receipt Styling for Chef Dashboard */
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  #printable-receipt-container,
+  #printable-receipt-container * {
+    visibility: visible !important;
+  }
+  #printable-receipt-container {
+    position: absolute !important;
+    right: 0 !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 80mm !important;
+    margin: 0 auto !important;
+    padding: 12px !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}

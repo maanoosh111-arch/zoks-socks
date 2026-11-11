@@ -1,0 +1,6 @@
+{
+  "name": "ZOKS - متجر الشرابات العصرية",
+  "description": "متجر ZOKS للشرابات العصرية — أفضل الخامات بأفضل الأسعار مع توصيل سريع وإدارة طلبات متكاملة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

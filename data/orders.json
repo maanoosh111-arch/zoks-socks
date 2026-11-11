@@ -1,0 +1,160 @@
+{
+  "baselineResetAt": null,
+  "orders": [
+    {
+      "id": 4,
+      "orderCode": "ORD-1004",
+      "customerId": "cust_3c1293aee4c2",
+      "customerName": "عميل تجريبي",
+      "customerPhone": "01000000000",
+      "fulfillmentType": "delivery",
+      "deliveryAddress": "القاهرة، المعادي",
+      "notes": null,
+      "paymentMethod": "cod",
+      "paymentWalletPhone": null,
+      "paymentReceiptImage": null,
+      "status": "Pending",
+      "subtotal": 300,
+      "deliveryFee": 30,
+      "discountAmount": 0,
+      "totalAmount": 330,
+      "isPaid": false,
+      "isArchived": false,
+      "isDeletedFromArchive": false,
+      "createdAt": "2026-11-10T01:58:06.348Z",
+      "items": [
+        {
+          "id": 1,
+          "productId": "رجالي__دستة-z-000__1",
+          "productName": "دستة Z-000",
+          "category": "رجالي",
+          "quantity": 1,
+          "unitPrice": 300,
+          "unitProfitSnapshot": 170,
+          "profitSnapshotAvailable": true,
+          "image": "https://res.cloudinary.com/h74mxqsb/image/upload/v1793876370/Classic_Package_lrduqh.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "orderCode": "ORD-1003",
+      "customerId": "cust_fed27d851e9c",
+      "customerName": "عميل تجربة فودافون كاش",
+      "customerPhone": "01011223344",
+      "fulfillmentType": "delivery",
+      "deliveryAddress": "الإسكندرية، سيدي جابر، شارع المشير، عمارة 5",
+      "notes": "تم التحويل بنجاح",
+      "paymentMethod": "vodafone_cash",
+      "paymentWalletPhone": "01011223344",
+      "paymentReceiptImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
+      "status": "Finished",
+      "subtotal": 300,
+      "deliveryFee": 25,
+      "discountAmount": 0,
+      "totalAmount": 325,
+      "isPaid": true,
+      "isArchived": false,
+      "isDeletedFromArchive": false,
+      "createdAt": "2026-11-05T21:24:09.190Z",
+      "items": [
+        {
+          "id": 1,
+          "productId": "men__classic__1",
+          "productName": "دستة شرابات Classic",
+          "category": "رجالي",
+          "quantity": 1,
+          "unitPrice": 300,
+          "unitProfitSnapshot": null,
+          "profitSnapshotAvailable": false,
+          "image": ""
+        }
+      ],
+      "rejectedAt": "2026-11-05T22:06:58.302Z",
+      "rejectionReason": "إيصال غير مطابق",
+      "finishedAt": "2026-11-05T22:07:04.897Z"
+    },
+    {
+      "id": 1,
+      "orderCode": "ORD-1001",
+      "customerId": "cust_demo_1",
+      "customerName": "محمد عبد الرحمن",
+      "customerPhone": "01098765432",
+      "fulfillmentType": "delivery",
+      "deliveryAddress": "القاهرة، المعادي، شارع 9، عمارة 14 الدور 3",
+      "notes": "يرجى الاتصال قبل الوصول بنصف ساعة",
+      "paymentMethod": "vodafone_cash",
+      "paymentWalletPhone": "01098765432",
+      "paymentReceiptImage": "https://res.cloudinary.com/h74mxqsb/image/upload/v1793911571/Vodafone-Cash_xuedki.png",
+      "status": "In Progress",
+      "subtotal": 480,
+      "deliveryFee": 25,
+      "discountAmount": 0,
+      "totalAmount": 505,
+      "isPaid": true,
+      "isArchived": false,
+      "isDeletedFromArchive": false,
+      "createdAt": "2026-11-05T19:23:42.428Z",
+      "startedAt": "2026-11-05T20:23:42.428Z",
+      "items": [
+        {
+          "id": 1,
+          "orderId": 1,
+          "productId": "men__classic__1",
+          "productName": "دستة شرابات Classic",
+          "category": "رجالي",
+          "quantity": 1,
+          "unitPrice": 300,
+          "unitProfitSnapshot": 170,
+          "profitSnapshotAvailable": true
+        },
+        {
+          "id": 2,
+          "orderId": 1,
+          "productId": "men__nike__2",
+          "productName": "دستة شرابات Nike Sport",
+          "category": "رجالي",
+          "quantity": 1,
+          "unitPrice": 180,
+          "unitProfitSnapshot": 90,
+          "profitSnapshotAvailable": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "orderCode": "ORD-1002",
+      "customerId": "cust_demo_2",
+      "customerName": "سارة كمال",
+      "customerPhone": "01234567890",
+      "fulfillmentType": "delivery",
+      "deliveryAddress": "الجيزة، الدقي، شارع مصدق، عمارة 22",
+      "notes": "الدفع نقداً للمندوب عند الاستلام",
+      "paymentMethod": "cod",
+      "paymentWalletPhone": null,
+      "paymentReceiptImage": null,
+      "status": "Pending",
+      "subtotal": 240,
+      "deliveryFee": 25,
+      "discountAmount": 0,
+      "totalAmount": 265,
+      "isPaid": false,
+      "isArchived": false,
+      "isDeletedFromArchive": false,
+      "createdAt": "2026-11-05T20:53:42.428Z",
+      "items": [
+        {
+          "id": 3,
+          "orderId": 2,
+          "productId": "women__soft_ankle__4",
+          "productName": "دستة شرابات حريمي Soft Ankle",
+          "category": "حريمي",
+          "quantity": 1,
+          "unitPrice": 240,
+          "unitProfitSnapshot": 120,
+          "profitSnapshotAvailable": true
+        }
+      ]
+    }
+  ]
+}
